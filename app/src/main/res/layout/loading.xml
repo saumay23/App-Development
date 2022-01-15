@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/loading_clickable"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+
+        android:id="@+id/loadingfixed"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loadingimage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="60dp"
+            android:layout_marginStart="20dp">
+
+            <ImageView
+                android:id="@+id/loadingdp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:background="#808080" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/loadingname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/loadingimage"
+        android:background="#808080" />
+
+        <TextView
+            android:id="@+id/loadingdescription"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/loadingname"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/loadingimage"
+            android:background="#808080"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>
